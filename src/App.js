@@ -15,7 +15,7 @@ class App extends Component {
         <NavBar/>
         <div className='container'>
           <Switch>
-            <Route path="/cliente" exact component={Cliente}/>
+            <Route path="/" exact component={Cliente}/>
             <Route path="/servicios" component={Servicios}/>
           </Switch>
         </div>

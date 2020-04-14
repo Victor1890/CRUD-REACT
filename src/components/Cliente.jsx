@@ -91,7 +91,7 @@ class Cliente extends Component{
     render(){
         return(
             <div>
-                <form onSubmit={e => this.fSubmit(e)} className="group-form">
+                <form onLoad={this.consulta()} onSubmit={e => this.fSubmit(e)} className="group-form">
                 
                     <div className="form-group mx-sm-3">
                         <input onChange={e => this.setState({nombre:e.target.value})} type="text" className="form-control" id='nombre' placeholder="Nombre"/>
